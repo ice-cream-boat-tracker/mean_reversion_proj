@@ -27,11 +27,11 @@ z = (price - moving average) / standard deviation
 | Parameter        | Value |
 |----------------|------|
 | Symbol          | SPY |
-| Lookback Window | 20 periods |
-| Entry Threshold | z < -1 |
-| Exit Threshold  | z ≥ 0 |
-| Position Size   | $300 |
-
+| Lookback Window | 30 periods |
+| Entry Threshold | z < -2.0 |
+| Exit Threshold  | z ≥ -0.5 |
+| Position Size   | $1000 |
+> Note: Parameters were selected based on backtesting performance to balance trade frequency, drawdown, and risk-adjusted returns.
 ---
 
 ## Backtest Results
