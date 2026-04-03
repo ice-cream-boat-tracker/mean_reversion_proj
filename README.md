@@ -17,8 +17,8 @@ We compute the Z-score:
 
 z = (price - moving average) / standard deviation
 
-- Buy signal: z < -1 → price is significantly below mean  
-- Sell signal: z ≥ 0 → price has reverted  
+- Buy signal: z < -2.0 → price is significantly below mean  
+- Sell signal: z ≥ -0.5 → partial mean reversion achieved  
 
 ---
 
