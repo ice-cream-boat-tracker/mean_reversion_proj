@@ -9,9 +9,10 @@ __pycache__/
 
 # Virtual environments
 venv/
+.venv/
 .env
 
-# Jupyter (if you ever use it)
+# Jupyter
 .ipynb_checkpoints/
 
 # Logs
