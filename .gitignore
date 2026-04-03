@@ -1,0 +1,21 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Jupyter (if you ever use it)
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
