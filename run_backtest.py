@@ -30,7 +30,7 @@ from quant_trading.data import fetch_yfinance_data
 
 def main() -> None:
     # Configure parameters
-    strategy_cfg = StrategyConfig(symbol="SPY", lookback=20, entry_z=-1.0, exit_z=0.0)
+    strategy_cfg = StrategyConfig(symbol="SPY", lookback=20, entry_z=-1.5, exit_z=-0.25)
     risk_cfg = RiskConfig(risk_per_trade=0.01, max_drawdown=0.2, transaction_cost=0.0005, slippage=0.0001, stop_loss_pct=0.03)
     backtest_cfg = BacktestConfig(initial_cash=10_000.0, start_date="2022-01-01", end_date="2024-01-01", risk_free_rate=0.0)
 
