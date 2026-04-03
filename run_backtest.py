@@ -16,6 +16,7 @@ installed prior to running this script.
 """
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 from quant_trading import (
     StrategyConfig,
@@ -77,6 +78,15 @@ def main() -> None:
     # Optionally show trades
     # for trade in result.trades:
     #     print(trade)
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(result.portfolio_values)
+    plt.title("Portfolio Value Over Time")
+    plt.xlabel("Time Step")
+    plt.ylabel("Portfolio Value ($)")
+    plt.tight_layout()
+    plt.savefig("results.png", dpi=200)
+    plt.show()
 
 
 if __name__ == "__main__":
