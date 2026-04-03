@@ -34,8 +34,8 @@ class StrategyConfig:
 
     symbol: str = "SPY"
     lookback: int = 20
-    entry_z: float = -1.0
-    exit_z: float = 0.0
+    entry_z: float = -1.5
+    exit_z: float = -0.25
     use_fractional_shares: bool = True
 
 
