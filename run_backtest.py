@@ -42,7 +42,7 @@ def main() -> None:
         data = fetch_yfinance_data(
             strategy_cfg.symbol, start=backtest_cfg.start_date, end=backtest_cfg.end_date, interval="1d"
         )
-        prices = data["Adj Close"].dropna()
+        prices = data["Adj Close"].dropna().squeeze()
         if prices.empty:
             raise ValueError("Empty price series returned from data provider")
     except Exception as e:
